@@ -1,4 +1,9 @@
+# datas
+*.data
+*.names
+
 # History files
+.DS*
 .Rhistory
 .Rapp.history
 

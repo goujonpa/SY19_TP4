@@ -1,0 +1,10 @@
+[1] "KNN Prediction Table"
+[1] "Using knn.pred = knn(Xtrain, Xtst, ztrain[,1], k = 1)"
+[1] "then table(knn.pred, ztst[,1])"
+        
+knn.pred  aa  ao dcl  iy  sh
+     aa  147  69   0   0   0
+     ao   85 271   0   0   0
+     dcl   0   0 247   6   0
+     iy    0   1   3 380   0
+     sh    0   0   2   2 291
