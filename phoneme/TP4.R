@@ -3,92 +3,51 @@
 
 # Phoneme data analysis
 
-# >>> Initialisation
-# Initial loading and studies of the dataset
-# TO DO : other data visualisation methods
-
+# >>> DATA LOADING
 # load data
 source("./data_loading.R")
 
 # missmap
 source("./missmap.R")
 
+# 10 folds splitting
+# source("./sampling.R")
+source("./ten_fold.R")
+
+# >>> MULTINOMIAL LOGISTIC REGRESSION
+source("./multinomial_logreg.R")
+
+# >>> INITIAL DATA VISUALISATION
+# PCA
+# source("./pca.R")
 # studying correlation
-source("./correlation_studying.R")
+# source("./correlation_studying.R")
 
-# Sampling 
-source("./sampling.R")
 
-# >>> Testing first assumptions on models
+# >>> MULTINOMIAL CLASSIFICATION LEARNING METHODS
 
-# === Multiclass classification problems
-
-# ... Naturally permits multiclass classification
 # KNN
-source("./knn.R")
-# TODO : Studying the k parameter
+# source("./knn.R")
 
-# ... One vs All strategy
-# multinomial model (based on maximum likelihood)
-source("./multinomialreg.R")
+# MULTINOMIAL LOGISTIC REGRESSSION
+# source("./multinomialreg.R")
+
+# MULTINOMIAL LDA
+# source("./multinomiallda.R")
+
+# MULTINOMIAL QDA
+# source("./multinomialqda.R")
+
+# tester aussi les méthodes 1 vs 1 * 4 en utilisant le model shrinkage etc
 
 
-
-# ... One vs One strategy
-
-# ... Hierarchical Classification
-
-# ... Extensions from binary
-# Multi-Layer perceptron
-# ELM ?
-# KNN
-# Naive Bayes
-# Decision trees 
+# >>> BONUS
+# TREES
+# source("./tree.R")
 # SVM
+# NEURAL NETWORKS
 
 
-
-
-
-
-# Logistic Regression
-# source("logreg.R")
-# TO DO : Extend to the multiclass case (SY09)
-
-# QDA
-# Idem (SY09)
-
-# LDA
-# Idem (SY09)
-
-
-# Decision Tree
-source("./tree.R")
-
-
-# SVM
-
-# >>> Data refactoring, subseting etc...
-
-
-
-# >>> Second assumptions on models
-
-
-
-# >>> Models selections and conclusions
-
-
-
-
-
-# >>> QUESTIONS
-# Unsupervised to try too ?
-# Variabilité inter-locuteur ? Variabilité inter-locuteur du même ordre que variabilité inter-phonème ?
-# Variabilité entre deux fois la même syllabe chez le même locuteur
-
-
-
-
-
+# Cross-validation vs Bootstrap vs ...
+# PCR ?
 
