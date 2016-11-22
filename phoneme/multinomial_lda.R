@@ -6,6 +6,13 @@
 
 library(MASS)
 
+# >>> DATA LOADING
+# load data & split it
+source("./data_loading.R")
+source("./ten_fold.R")
+source("./sampling.R")
+
+
 error_rates = matrix(nrow=10, ncol=1)
 # using 10-folds cross-validation
 for (i in 1:10) {

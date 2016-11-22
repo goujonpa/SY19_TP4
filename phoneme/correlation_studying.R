@@ -4,6 +4,11 @@
 # Phoneme data analysis
 # Correlation studying file
 
+# >>> DATA LOADING
+# load data & split it
+source("./data_loading.R")
+source("./ten_fold.R")
+source("./sampling.R")
 
 # Studying correlation between variables and plotting it into a heatmap
 corr = cor(SX)

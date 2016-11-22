@@ -4,6 +4,7 @@
 # Phoneme data analysis
 # Splitting data to ten folds
 
+
 library(caret)
 
 # Split data into ten folds

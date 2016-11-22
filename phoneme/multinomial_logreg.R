@@ -4,6 +4,13 @@
 # Phoneme data analysis
 # Multinomial logistic regression
 
+# >>> DATA LOADING
+# load data & split it
+source("./data_loading.R")
+source("./ten_fold.R")
+source("./sampling.R")
+
+
 library(nnet)
 
 # >>> First test
